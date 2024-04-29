@@ -1,15 +1,41 @@
 import mongoose, { connect } from 'mongoose';
 import {DB_NAME} from './constants';
-import express from 'express';
 
-const app  = express();
 
-// function connectDB(){}
+const connectDB = async () => {
+    try{
 
-// connectDB();
+    }
+    catch(error){
+        console.log("mongoDB connection error: ", error)
+        process.exit(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // standared way to connect DB: iffi approach
+
 /*
+import express from 'express';
+const app  = express()
+
+
 (async()=>{
     try{
         mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
